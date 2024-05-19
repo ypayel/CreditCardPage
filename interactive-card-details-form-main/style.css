@@ -1,14 +1,17 @@
 body {
     width: 100%;
     min-height: 100vh;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     font-family: "Space Grotesk", sans-serif;
   }
 
+.front-card, .back-card {
+    color: white;
+}
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 .background {
     position: relative;
     width: 430px;
@@ -65,24 +68,26 @@ body {
 }
 .number-card {
     position: absolute;
-    top: 55%;
-    left: 10%;
-    letter-spacing: 7px;
+    top: 75px;
+    left: 20px;
+    letter-spacing: 6px;
 }
 .name-card {
     position: absolute;
-    top: 80%;
-    left: 10%;
-   
+    top:125px;
+    left:20px;
+    /* letter-spacing: 4px; */
+    font-size: 13px;
 }
 .mounth-card {
     position: absolute;
-    top: 80%;
-    left: 80%;
+    top: 125px;
+    left: 250px;
 }
 .cvc-card {
     position: absolute;
-    top: 43.5%;
-    left: 80%;
+    margin-left: 260px;
+    margin-top: 79px;
+    font-size: 11px;
 }
 }
