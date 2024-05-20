@@ -11,6 +11,16 @@ body {
 }
 
 
+.first-input, .second-input, .third-input, .four-input, .five-input {
+    border-radius: 8px;
+    line-height: 30px;
+    border-style:ridge;
+    border-color: grey;
+    border-width: 1px;
+}
+.card-name, .card-number, .data, .cvc {
+    font-size: 13px;
+}
 @media only screen and (max-width: 768px) {
 .background {
     position: relative;
@@ -47,19 +57,60 @@ body {
     border-radius: 20px;
     text-align: center;
 }
+
 .inputs-button {
-    width: 150px;
-    height: 250px;
+    width: 385px;
+    height: 300px;
     display: flex;
     margin-top: 75px;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: flex-start;
     margin-left: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.first-input, .second-input {
+    margin-bottom: 10px;
+    width: 200px;
+}
+.third-input, .four-input {
+    width:93px;
+    text-align: center;
+
+}
+.four-input {
+    margin-left: 3px;
 }
 
+.five-input {
+    width: 90px;
+    text-align:left;
+}
+
+.card-name, .card-number {
+    text-align: left;
+    line-height: 0px;
+}
+.data {
+    line-height: 0px;
+}
+.cvc {
+    height: 9px;
+    text-align: center;
+}
+.button-confirm {
+    text-align: center;
+}
+.confirm {
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    background-color: hsl(278, 94%, 30%);
+    line-height: 30px;
+    width: 205px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+}
 .conteiner-card {
     position: relative;
     color: white;
@@ -76,7 +127,6 @@ body {
     position: absolute;
     top:125px;
     left:20px;
-    /* letter-spacing: 4px; */
     font-size: 13px;
 }
 .mounth-card {

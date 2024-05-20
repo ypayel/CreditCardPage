@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
   <title>Frontend Mentor | Interactive card details form</title>
 </head>
@@ -28,37 +29,39 @@
     <form>
     <div class="inputs-button">
   <div class="name-input">
+    
 <label for="first-input">
-  <span>Cardholder Name</span>
+  <p class="card-name">CARDHOLDER NAME</p>
   <input type="text" value="e.g. Jane Applessed" class="first-input">
 </label>
   </div>
   <div class="card-number-input">
+    <p class="card-number">CARD NUMBER</p>
     <label for="second-input">
-      <span>Card Number</span>
-      <input type="text" value="e.g. 1234 5678 9123 0000" class="second-input">
+      <input type="text" value="e.g. 1234 5678 9123 0000" class="second-input" maxlength="16">
     </label>
   </div>
   <div class="data-input">
+    <p class="data">EXP. DATE (MM/YY)</p>
     <label for="third-input">
-      <span>Exp. Date (MM/YY)</span>
-      <input type="text" value="MM" class="third-input">
+      <input type="text" value="MM" class="third-input" maxlength="2">
     </label>
     <label for="four-input">
-      <input type="text" value="YY" class="four-input">
+      <input type="text" value="YY" class="four-input" maxlength="4">
     </label>
   </div>
   <div class="cvc-input">
+    <p class="cvc">CVC</p>
     <label for="five-input">
-      <span>CVC</span>
-      <input type="text" value="e.g. 123" class="five-input">
+      <input type="text" value="e.g. 123" class="five-input" maxlength="3">
     </label>
   </div>
-  <div class="button-confirm">
-    <button class="confirm">Confirm</button>
-  </div>
-</form>
 </div>
+<div class="button-confirm">
+  <button class="confirm">Confirm</button>
+</div>
+</form>
+
 </main>
   <footer>
   <div class="attribution">
