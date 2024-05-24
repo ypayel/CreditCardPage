@@ -13,55 +13,53 @@
   <nav>
     <div class="background"> 
     <img src="./images/bg-main-desktop.png" alt="background-image" class="background-image">
-    <div class="back-card">
-      <img src="./images/bg-card-back.png" alt="card">
-      <h4 class="cvc-card">000</h4>
-    </div>
     <div class="front-card">
-      <img src="./images/bg-card-front.png" alt="card">
-        <h4 class="number-card">0000000000000000</h4>
-        <h4 class="name-card">Jane Appleseed</h4>
+      <img src="./images/bg-card-front.png" alt="card" class="front-card-image">
+        <h4 class="number-front">0000000000000000</h4>
+        <h4 class="name">Jane Appleseed</h4>
         <h4 class="mounth-card">00/00</h4>
     </div>
+    <div class="back-card">
+      <img src="./images/bg-card-back.png" alt="card" class="back-card-image">
+      <h4 class="cvc-card">000</h4>
+    </div>
   </div>
-</nav>
   <main>
-    <form>
-    <div class="inputs-button">
-  <div class="name-input">
-    
-<label for="first-input">
-  <p class="card-name">CARDHOLDER NAME</p>
-  <input type="text" value="e.g. Jane Applessed" class="first-input">
-</label>
+    <form class="card-form">
+      <div class="inputs-button">
+    <div class="name-input">
+  <label for="first-input">
+    <p class="card-name">CARDHOLDER NAME</p>
+    <input type="text" value="e.g. Jane Applessed" class="first-input">
+  </label>
+    </div>
+    <div class="card-number-input">
+      <p class="card-number">CARD NUMBER</p>
+      <label for="second-input">
+        <input type="text" value="e.g. 1234 5678 9123 0000" class="second-input" maxlength="16">
+      </label>
+    </div>
+    <div class="data-input">
+      <p class="data">EXP. DATE (MM/YY)</p>
+      <label for="third-input">
+        <input type="text" value="MM" class="third-input" maxlength="2">
+      </label>
+      <label for="four-input">
+        <input type="text" value="YY" class="four-input" maxlength="4">
+      </label>
+    </div>
+    <div class="cvc-input">
+      <p class="cvc">CVC</p>
+      <label for="five-input">
+        <input type="text" value="e.g. 123" class="five-input" maxlength="3">
+      </label>
+    </div>
   </div>
-  <div class="card-number-input">
-    <p class="card-number">CARD NUMBER</p>
-    <label for="second-input">
-      <input type="text" value="e.g. 1234 5678 9123 0000" class="second-input" maxlength="16">
-    </label>
+  <div class="button-confirm">
+    <button class="confirm">Confirm</button>
   </div>
-  <div class="data-input">
-    <p class="data">EXP. DATE (MM/YY)</p>
-    <label for="third-input">
-      <input type="text" value="MM" class="third-input" maxlength="2">
-    </label>
-    <label for="four-input">
-      <input type="text" value="YY" class="four-input" maxlength="4">
-    </label>
-  </div>
-  <div class="cvc-input">
-    <p class="cvc">CVC</p>
-    <label for="five-input">
-      <input type="text" value="e.g. 123" class="five-input" maxlength="3">
-    </label>
-  </div>
-</div>
-<div class="button-confirm">
-  <button class="confirm">Confirm</button>
-</div>
-</form>
-
+  </form>
+</nav>
 </main>
   <footer>
   <div class="attribution">
