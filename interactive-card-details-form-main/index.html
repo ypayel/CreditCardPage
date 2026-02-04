@@ -30,38 +30,39 @@
     <div class="name-input">
   <label for="first-input">
     <p class="card-name">CARDHOLDER NAME</p>
-    <input type="text" value="e.g. Jane Applessed" class="first-input">
+    <input type="text" value="e.g. Jane Applessed" class="first-input" id="formInput">
   </label>
     </div>
     <div class="card-number-input">
       <p class="card-number">CARD NUMBER</p>
       <label for="second-input">
-        <input type="text" value="e.g. 1234 5678 9123 0000" class="second-input" maxlength="16">
+        <input type="text" value="e.g. 1234 5678 9123 0000" class="second-input" maxlength="16" id="formInput">
       </label>
     </div>
     <div class="data-input">
       <p class="data">EXP. DATE (MM/YY)</p>
       <label for="third-input">
-        <input type="text" value="MM" class="third-input" maxlength="2">
+        <input type="text" value="MM" class="third-input" maxlength="2" id="formInput">
       </label>
       <label for="four-input">
-        <input type="text" value="YY" class="four-input" maxlength="4">
+        <input type="text" value="YY" class="four-input" maxlength="4" id="formInput">
       </label>
     </div>
     <div class="cvc-input">
       <p class="cvc">CVC</p>
       <label for="five-input">
-        <input type="text" value="e.g. 123" class="five-input" maxlength="3">
+        <input type="text" value="e.g. 123" class="five-input" maxlength="3" id="formInput">
       </label>
     </div>
   </div>
   <div class="button-confirm">
-    <button class="confirm">Confirm</button>
+    <button class="confirm" onclick="openAndPrint(`./apply.html`)">Confirm</button>
   </div>
   </form>
 </nav>
 </main>
   <footer>
+    <div id="result" value=" "></div>
   <div class="attribution">
     Coded by <a href="https://github.com/ypayel">ypayel</a>.
   </div>

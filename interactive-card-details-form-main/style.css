@@ -22,6 +22,72 @@ body {
     font-size: 13px;
 }
 
+main {
+    display: flex;
+  }
+
+.inputs-button {
+    margin-top: -550px;
+    margin-left: 800px;
+   
+}
+.background {
+   height: 100vh;
+}
+
+.background-image {
+    margin: -8px;
+    height: 1000px;
+}
+.front-card {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 1;
+    color: white;
+  }
+  
+  .back-card {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: white;
+    
+  }
+  .number-front {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    letter-spacing: 7px;
+  }
+  .name {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+  }
+  .mounth-card {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+.cvc-card {
+    position: absolute;
+    top: 38.5%;
+    left: 80%;
+}
+
+.confirm {
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    background-color: hsl(278, 94%, 30%);
+    line-height: 30px;
+    width: 205px;
+    margin-left: 905px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
 @media only screen and (max-width: 1440px) { 
 
     main {
@@ -36,6 +102,10 @@ body {
     .background {
        height: 100vh;
     }
+
+    .background-image {
+        margin: -8px;
+    }
     .front-card {
         position: absolute;
         top: 20%;
@@ -49,6 +119,7 @@ body {
         top: 50%;
         left: 15%;
         color: white;
+        margin-top: 35px;
       }
       .number-front {
         position: absolute;
@@ -84,6 +155,19 @@ body {
         margin-top: 15px;
     }
 } 
+
+@media only screen and (max-width: 1024px) {
+    .background-image {
+        margin: -8px;
+        height: 1000px;
+    }
+    .confirm {
+        margin-right: 90px;
+    }
+    .back-card {
+        margin-top: 35px;
+    }
+}
 
 @media only screen and (max-width: 375px) {
     .background {
@@ -204,4 +288,4 @@ body {
         margin-top: 10px;
         font-size: 11px;
     }
-    }
+    } 
